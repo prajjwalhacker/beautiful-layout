@@ -19,6 +19,8 @@
         height: 100%;
         overflow: scroll;
         .dashboard-main-container-left-heading {
+            display: flex;
+            justify-content: flex-start;
             font-size: 18px;
             padding-top: 20px;
         }
