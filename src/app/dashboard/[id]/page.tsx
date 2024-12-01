@@ -8,33 +8,111 @@ function Dashboard() {
 
   const {  theme } = useTheme()
 
+
+  const topicsArr = [
+      {
+         name: "Nextjs"
+      },
+      {
+         name: "Reactjs"
+      },
+      {
+        name: "Nodejs"
+     },
+     {
+        name: "WebRTC"
+     },
+     {
+      name: "Websocket"
+     },
+     {
+      name: "DSA"
+     },
+     {
+      name: "Project making"
+     },{
+      name: "Nextjs"
+   },
+   {
+      name: "Reactjs"
+   },
+   {
+     name: "Nodejs"
+  },
+  {
+     name: "WebRTC"
+  },
+  {
+   name: "Websocket"
+  },
+  {
+   name: "DSA"
+  },
+  {
+   name: "Project making"
+  }
+  ,
+  {
+    name: "Nextjs"
+ },
+ {
+    name: "Reactjs"
+ },
+ {
+   name: "Nodejs"
+},
+{
+   name: "WebRTC"
+},
+{
+ name: "Websocket"
+},
+{
+ name: "DSA"
+},
+{
+ name: "Project making"
+},{
+ name: "Nextjs"
+},
+{
+ name: "Reactjs"
+},
+{
+name: "Nodejs"
+},
+{
+name: "WebRTC"
+},
+{
+name: "Websocket"
+},
+{
+name: "DSA"
+},
+{
+name: "Project making"
+}
+,
+  ]
+
   return (
     <div className={`dashboard-main-container  ${theme === 'light' ? 'dashboard-light-mode': ''}`}>
         <Navbar/> 
         <div className='dashboard-main'>
         <div className='dashboard-main-container-left'>
-        <div className='blocks'>
-            
-        </div>
-        <div className='blocks'>
-            sdsdfsdfsdse
-            sdfsdfsdf
-            </div>
-            <div className='blocks'>
-dsfdsfsdfdfdsf
-sdfsdfsdjf
-            </div>
-            <div className='blocks'>
-            dsfsdfsdfsd
-            dfsdfsdfsdjfksdfkjlsdf
-            sdf
-            </div>
-            <div className='blocks'>
-            dfsdfsdfsdjfksdfkjlsdfsdfsd
-            </div>
-            <div className='blocks'>
-            asdfsdfsdprajjwja
-            </div>
+          <div className='dashboard-main-container-left-heading'>
+            Topics
+          </div>
+          <div className='dashboard-main-container-left-topic-lists'>
+            {topicsArr.map((item, index) => {
+              return (
+                <div className='dashboard-main-container-topic-element' key={index}>
+                  {item.name || ''}
+                 </div>
+               )
+            })}
+          </div>
         </div>
         <div className='dashboard-main-container-mid'>
         </div>
