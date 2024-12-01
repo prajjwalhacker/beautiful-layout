@@ -3,17 +3,22 @@ import donutI from '../../../public/images/donut.svg';
 import Image from 'next/image';
 import { ModeToggle } from './ModeToggle';
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/navigation';
 
 function Navbar() {
 
   const {  theme } = useTheme()
 
+  const router = useRouter();
+
   const navbarList = [
     {
-        name: "My blogs"
+        name: "My blogs",
+        value: '/dashboard/new'
     },
     {
-        name: "About us"
+        name: "About us",
+        value: '/about'
     }
   ]
   return (
@@ -24,7 +29,9 @@ function Navbar() {
         </div>
           {navbarList.map((item, index) => {
              return ( 
-                <div className='text-3xl navbar-items' key={index}>
+                <div className='text-3xl navbar-items' key={index} onClick={()=>{
+                  router.push(item.value);
+                }}>
                     {item.name}
                 </div>
              )
