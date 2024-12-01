@@ -18,19 +18,28 @@
         border-right: 0.5px solid hsl(var(--border));
         height: 100%;
         overflow: scroll;
-        padding-top: 40px;
         .dashboard-main-container-left-heading {
-            font-size: 16x;
-            font-weight: bold;
-            text-align: center;
+            font-size: 18px;
+            padding-top: 20px;
         }
         .dashboard-main-container-left-topic-lists {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            padding-left: 30px;
+            align-items: flex-start;
+            gap: 15px;
             .dashboard-main-container-topic-element {
                 cursor: pointer;
+                color: hsl(var(--muted-foreground));
+                font-weight: bold; /* Bold for emphasis */
+                text-decoration: none; /* Remove underline */
+                font-size: 14px;
+                letter-spacing: 1px; /* Small spacing for elegance */
+                transition: color 0.3s; /* Smooth color transition */
+                cursor: pointer;
+            }
+            .dashboard-main-container-topic-element:hover {
+                color: white;
+                text-decoration: underline;
             }
         }
      }

@@ -101,7 +101,7 @@ name: "Project making"
         <Navbar/> 
         <div className='dashboard-main'>
         <div className='dashboard-main-container-left'>
-          <div className='dashboard-main-container-left-heading'>
+          <div className='dashboard-main-container-topic-element dashboard-main-container-left-heading'>
             Topics
           </div>
           <div className='dashboard-main-container-left-topic-lists'>
