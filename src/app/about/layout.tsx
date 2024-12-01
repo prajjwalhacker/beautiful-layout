@@ -1,4 +1,11 @@
 import type { Metadata } from "next";
+import '../../app/globals.scss';
+import '../../app/styles/_dashboard.scss';
+import '../../app/styles/_navbar.scss';
+import '../../app/styles/_footer.scss';
+import '../../app/styles/_mode-toggle.scss';
+import '../../app/styles/_content-component.scss';
+import { ThemeProvider } from "@/app/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,10 +18,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <>
+    <html lang="en" suppressHydrationWarning>
+      <head />
       <body>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
+  </>
   );
 }
