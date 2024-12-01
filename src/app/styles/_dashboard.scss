@@ -59,7 +59,12 @@
         height: 100%;
         padding-top: 20px;
         padding-inline: 40px;
+        overflow: scroll;
      }
+     .dashboard-main-container-mid {
+        overflow: scroll;
+        scrollbar-width: none; /* Firefox */
+    }
      .dashboard-main-container-right {
          width: 25%;
          height: 100%;

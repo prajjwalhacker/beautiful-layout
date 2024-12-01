@@ -120,7 +120,7 @@ name: "Project making"
           </div>
         </div>
         <div className='dashboard-main-container-mid'>
-        <ContentComponent heading={heading} description={'fsdfsdf sefsdfjk sdfsdfjdssfsdjf'}>
+        <ContentComponent heading={heading} description={'Reconcilation algorithm of React'}>
         <ReactFibre/>
         </ContentComponent>
         </div>
