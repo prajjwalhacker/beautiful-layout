@@ -4,11 +4,20 @@
     .toggle-sun {
         display: flex;
         cursor: pointer;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
     }
     .toggle-moon{
         display: flex;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         cursor: pointer;
+        background-color:black;
+        color: white;
+        border-radius: 5px;
     }
 }

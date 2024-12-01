@@ -12,7 +12,7 @@ export function ModeToggle() {
   return (
         <div className="mode-toggle">
           {theme === 'light' ? <Moon className="toggle-moon" onClick={() => { setTheme('dark'); }}/>
-          : <Sun className="toggle-moon" onClick={()=>{ setTheme('light'); }}/> }
+          : <Sun className="toggle-sun" style={{ color: "black" }} onClick={()=>{ setTheme('light'); }}/> }
         </div>
   )
 }
