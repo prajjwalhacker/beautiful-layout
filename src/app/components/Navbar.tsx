@@ -29,7 +29,7 @@ function Navbar() {
         <div className='navbar-left'>
           {navbarList.map((item, index) => {
              return ( 
-                <div className='navbar-items' key={index}>
+                <div className='text-3xl navbar-items' key={index}>
                     {item.name}
                 </div>
              )
