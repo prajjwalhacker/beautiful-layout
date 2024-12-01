@@ -10,25 +10,10 @@ function Navbar() {
 
   const navbarList = [
     {
-        name: "Docs"
+        name: "My blogs"
     },
     {
-        name: "Components"
-    }
-    ,
-    {
-        name: "Blocks"
-    },
-    {
-        name: "Charts"
-    }
-    ,
-    {
-        name: "Themes"
-    }
-    ,
-    {
-        name: "Colors"
+        name: "About us"
     }
   ]
   return (
