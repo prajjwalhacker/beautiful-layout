@@ -1,0 +1,14 @@
+.mode-toggle {
+    display: flex;
+    gap: 5px;
+    .toggle-sun {
+        display: flex;
+        cursor: pointer;
+    }
+    .toggle-moon{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

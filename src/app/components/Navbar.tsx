@@ -1,6 +1,7 @@
 import React from 'react'
 import donutI from '../../../public/images/donut.svg';
 import Image from 'next/image';
+import { ModeToggle } from './ModeToggle';
 
 function Navbar() {
   const navbarList = [
@@ -41,6 +42,7 @@ function Navbar() {
           })}
         </div>
         <div className='navbar-right'>
+           <ModeToggle/>
         </div>
     </div>
   )
