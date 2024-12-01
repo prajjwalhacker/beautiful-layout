@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes';
 
 function Dashboard() {
 
-  const { setTheme, theme } = useTheme()
+  const {  theme } = useTheme()
 
   return (
     <div className={`dashboard-main-container  ${theme === 'light' ? 'dashboard-light-mode': ''}`}>

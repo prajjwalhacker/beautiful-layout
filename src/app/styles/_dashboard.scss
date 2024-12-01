@@ -10,8 +10,8 @@
        height: calc(100% - 60px);
        padding-top: 60px;
      .dashboard-main-container-left {
-        width: 25%;
-        border-right: 1px solid hsl(var(--border));
+        width: 20%;
+        border-right: 0.5px solid hsl(var(--border));
         height: 100%;
         overflow: scroll;
         .blocks {
@@ -28,8 +28,8 @@
         display: none; /* Chrome, Safari, Edge */
     }
      .dashboard-main-container-mid {
-        width: 50%;
-        border-right: 1px solid hsl(var(--border));
+        width: 65%;
+        border-right: 0.5px solid hsl(var(--border));
         height: 100%;
      }
      .dashboard-main-container-right {

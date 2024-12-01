@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes';
 
 function Navbar() {
 
-  const { setTheme, theme } = useTheme()
+  const {  theme } = useTheme()
 
   const navbarList = [
     {
