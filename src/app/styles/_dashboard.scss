@@ -1,8 +1,9 @@
 .dashboard-main-container {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     background-color: black;
+    padding-bottom: 60px;
     width: 100vw;
     .dashboard-main {
        display: flex;

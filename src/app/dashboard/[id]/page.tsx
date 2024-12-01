@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes';
 import ContentComponent from '@/app/components/ContentComponent';
 import { useState } from 'react';
 import ReactFibre from '@/app/components/ReactFibre';
+import Footer from '@/app/components/Footer';
 
 function Dashboard() {
 
@@ -127,6 +128,7 @@ name: "Project making"
         <div className='dashboard-main-container-right'>
         </div>
         </div>
+        <Footer/>
     </div>
   )
 }

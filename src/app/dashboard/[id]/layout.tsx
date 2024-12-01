@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import '../../../app/globals.scss';
 import '../../styles/_dashboard.scss';
 import '../../styles/_navbar.scss';
+import '../../styles/_footer.scss';
 import '../../styles/_mode-toggle.scss';
 import '../../styles/_content-component.scss';
 import { ThemeProvider } from "@/app/components/ThemeProvider";
