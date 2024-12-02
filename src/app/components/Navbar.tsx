@@ -14,7 +14,7 @@ function Navbar() {
   const navbarList = [
     {
         name: "My blogs",
-        value: '/dashboard/new'
+        value: '/blogs/new'
     },
     {
         name: "About us",
