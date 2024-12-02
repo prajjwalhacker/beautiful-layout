@@ -65,6 +65,11 @@
           }
         }
         
+        @media (max-width: 400px) {
+          .about-me-container {
+            max-width: 300px; /* Set max-width to 300px when the screen width is 400px or less */
+          }
+        }
         .about-me-container {
             display: flex;
             flex-direction: column;
