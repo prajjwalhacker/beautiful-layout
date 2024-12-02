@@ -6,6 +6,7 @@ import '../../styles/_footer.scss';
 import '../../styles/_mode-toggle.scss';
 import '../../styles/_content-component.scss';
 import { ThemeProvider } from "@/app/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Prajjwals soni blog Page",
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
+        <SpeedInsights/>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

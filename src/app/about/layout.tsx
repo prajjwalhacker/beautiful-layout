@@ -6,6 +6,7 @@ import '../../app/styles/_footer.scss';
 import '../../app/styles/_mode-toggle.scss';
 import '../../app/styles/_content-component.scss';
 import { ThemeProvider } from "@/app/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
+      <SpeedInsights/>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
