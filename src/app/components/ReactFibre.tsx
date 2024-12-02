@@ -3,7 +3,7 @@ import React from 'react'
 function ReactFibre() {
   return (
     <div style={{  display: 'flex', flexDirection: "column", gap: 10}}>
-       <div style={{ letterSpacing:"1.5px", lineHeight: 2 }}> React Fiber, introduced after React 16, is a complete rewrite of the old reconciliation algorithm (the stack reconciler). It significantly improves the performance and responsiveness of React applications, especially when dealing with complex UI updates, animations, and real-time interactions. Let’s dive deep into how Fiber works and why it’s a game-changer for React developers.
+       <div  style={{ letterSpacing:"1.5px", lineHeight: 2 }}> React Fiber, introduced after React 16, is a complete rewrite of the old reconciliation algorithm (the stack reconciler). It significantly improves the performance and responsiveness of React applications, especially when dealing with complex UI updates, animations, and real-time interactions. Let’s dive deep into how Fiber works and why it’s a game-changer for React developers.
        </div>
        Key Benefits of React Fiber:
        <div style={{ letterSpacing:"1.5px", lineHeight: 2 }}>
