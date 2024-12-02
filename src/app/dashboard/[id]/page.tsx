@@ -11,7 +11,7 @@ function Dashboard() {
 
   const {  theme } = useTheme()
 
-  const [heading,setHeading] = useState('');
+  const [heading,setHeading] = useState('React fibre');
 
   const topicsArr = [
       {
