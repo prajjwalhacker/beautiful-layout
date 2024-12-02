@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 20px;
     width: 100%;
     padding-inline: 20px;
     padding-block: 20px;
@@ -13,6 +13,52 @@
     z-index: 2;
     bottom: 0px;
     left: 0px;
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e1e;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .footer-text {
+      font-size: 16px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: glow-text 3s ease-in-out infinite;
+    }
+    
+    .heart {
+      color: #ff4081;
+      animation: heartbeat 1.5s infinite;
+    }
+    
+    .name {
+      color: #00ccff;
+    }
+    
+    @keyframes glow-text {
+      0%, 100% {
+        text-shadow: 0 0 5px #ff6ec4, 0 0 10px #7873f5;
+      }
+      50% {
+        text-shadow: 0 0 15px #ff6ec4, 0 0 30px #7873f5;
+      }
+    }
+    
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
     .social-icons-container {
         display: flex;
         gap: 12px;

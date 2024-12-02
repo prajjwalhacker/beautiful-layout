@@ -29,7 +29,7 @@ function Navbar() {
         </div>
           {navbarList.map((item, index) => {
              return ( 
-                <div className='text-3xl navbar-items' key={index} onClick={()=>{
+                <div className='text-3xl navbar-items navbar-text' key={index} onClick={()=>{
                   router.push(item.value);
                 }}>
                     {item.name}
