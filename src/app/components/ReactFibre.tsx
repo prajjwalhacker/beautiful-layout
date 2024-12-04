@@ -7,25 +7,40 @@ function ReactFibre() {
        </div>
        Key Benefits of React Fiber:
        <div style={{ letterSpacing:"1.5px", lineHeight: 2 }}>
-Asynchronous Rendering: Fiber allows React to pause and resume work, meaning expensive operations (e.g., heavy computations or animations) can be deferred to optimize UI performance.
-Prioritized Work: Tasks can be assigned priorities. For example, animations or network requests can be given higher priority than less critical updates.
-Concurrency: Fiber is designed to work asynchronously, enabling non-blocking updates to the DOM. This results in a smoother user experience.
-The Two Phases of Fiber Reconciliation
-Render Phase:
+       React Fiber is the heart of React's architecture, designed to enable scheduling and rendering optimizations. Here's how it transforms React:
+Core Objectives of Fiber
+Pause and Resume Work: Breaks rendering into units for efficient handling.
+Assign Priority: Manages different workloads for smoother updates.
+Reuse Completed Work: Prevents redundant processing.
 
-This is an asynchronous phase where React works to reconcile changes, breaking tasks into smaller units of work.
-It can prioritize work, pause it, or even discard tasks if necessary.
-The render phase determines the changes required in the Virtual DOM, but no actual DOM changes happen here.
-Commit Phase:
-
-In this phase, React applies the updates to the DOM. This is a synchronous process and reflects the final, committed changes.
-After this phase, React updates the UI with the most recent changes.
-Fibers Data Structures: The Fiber Tree
-Fiber uses two trees:
-
-Current Tree: The DOM tree that represents the UI in its most recent state.
-Work-in-progress Tree: A tree that is being updated in the render phase.
-Each component in React is represented by a fiber (unit of work). The fiber has properties like child, sibling, and return, forming a hierarchical relationship that mirrors the component tree.
+Abort Unnecessary Work: Stops processing when updates make it irrelevant.
+What is a Fiber?
+A fiber is a unit of work in React. Think of it as a virtual stack frame that allows React to schedule, prioritize, and optimize rendering work dynamically.
+Key Features of React Fiber
+Custom Stack Implementation
+Unlike the typical call stack, Fiber manages stack frames manually to improve scheduling and concurrency.
+Tree Structure
+Each fiber forms part of a tree with fields like child, sibling, and return to represent component relationships.
+Props Management
+Uses pendingProps and memoizedProps to determine whether updates are necessary, reducing redundant work.
+Priority Handling
+Assigns priorities (pendingWorkPriority) to work units, ensuring critical updates happen first.
+Maintains two fibers per component:
+Current Fiber: Represents the rendered state.
+Work-in-Progress Fiber: Tracks ongoing updates.
+Output Generation
+The final rendered output is built from leaf nodes (e.g., DOM nodes in the browser) and passed up the tree.
+Why is Fiber a Game-Changer?
+By reimagining how stack frames are handled, Fiber unlocks:
+Concurrency: React can prioritize urgent tasks like animations or user input.
+Error Boundaries: Improved handling of errors during rendering.
+Smooth UIs: Prevents frame drops by pausing and resuming rendering work seamlessly.
+Fiber in Action
+The following concepts power Fiber’s efficiency:
+CloneFiber: Reuses fibers for minimal allocation.
+Scheduler: Determines which unit of work runs next based on priority.
+Flush: Outputs completed work to the renderer for display.
+React Fiber is more than a rendering engine—it’s an elegant system that powers React’s speed, flexibility, and scalability.
 </div>
     </div>
   )
