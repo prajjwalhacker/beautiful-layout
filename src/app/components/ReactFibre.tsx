@@ -7,7 +7,7 @@ function ReactFibre() {
        </div>
        Key Benefits of React Fiber:
        <div style={{ letterSpacing:"1.5px", lineHeight: 2 }}>
-       React Fiber is the heart of React's architecture, designed to enable scheduling and rendering optimizations. Here's how it transforms React:
+       React Fiber is the heart of Reacts architecture, designed to enable scheduling and rendering optimizations. Heres how it transforms React:
 Core Objectives of Fiber
 Pause and Resume Work: Breaks rendering into units for efficient handling.
 Assign Priority: Manages different workloads for smoother updates.
@@ -36,11 +36,11 @@ Concurrency: React can prioritize urgent tasks like animations or user input.
 Error Boundaries: Improved handling of errors during rendering.
 Smooth UIs: Prevents frame drops by pausing and resuming rendering work seamlessly.
 Fiber in Action
-The following concepts power Fiber’s efficiency:
+The following concepts power Fibers efficiency:
 CloneFiber: Reuses fibers for minimal allocation.
 Scheduler: Determines which unit of work runs next based on priority.
 Flush: Outputs completed work to the renderer for display.
-React Fiber is more than a rendering engine—it’s an elegant system that powers React’s speed, flexibility, and scalability.
+React Fiber is more than a rendering engine—its an elegant system that powers Reacts speed, flexibility, and scalability.
 </div>
     </div>
   )
